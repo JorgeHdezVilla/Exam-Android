@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">InterWareNasa</string>
+    <string name="item_near_object_name">Name:</string>
+    <string name="item_near_object_reference">Reference:</string>
+    <string name="item_near_object_estimated_diameter">Estimated Diameter</string>
+    <string name="item_near_object_kilometers">Kilometers</string>
+    <string name="item_near_object_meters">Meters</string>
+    <string name="item_near_object_miles">Miles</string>
+    <string name="item_near_object_feet">Feet</string>
+    <string name="item_near_object_velocity">Velocity</string>
+    <string name="item_near_object_kilometers_second">Kilometers/Second</string>
+    <string name="item_near_object_kilometers_hour">Kilometers/Hour</string>
+    <string name="item_near_object_miles_hour">Miles/Hour</string>
+    <string name="item_near_object_information">Information</string>
+    <string name="item_near_object_potentially_hazardous">Potentially Hazardous</string>
+    <string name="item_near_object_close_approach_date">Close approach Date</string>
+    <string name="item_near_object_miss_distance">Miss Distance</string>
+    <string name="item_near_object_astronomical">Astronomical</string>
+    <string name="item_near_object_lunar">Lunar</string>
+    <string name="dialog_error_connection">No tiene conexión a internet</string>
+    <string name="dialog_error_download">No se pudo descargar la información</string>
+</resources>

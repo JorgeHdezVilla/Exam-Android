@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_near_object_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Fecha" />
+
+        <ImageView
+            android:id="@+id/item_near_object_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/item_near_object_date"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/ic_earth"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/item_near_object_name_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_near_object_date"
+            android:layout_toEndOf="@+id/item_near_object_img"
+            android:text="@string/item_near_object_name"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_near_object_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_near_object_date"
+            android:layout_toEndOf="@+id/item_near_object_name_label"
+            tools:text="Object Name" />
+
+        <TextView
+            android:id="@+id/item_near_object_reference_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_near_object_name_label"
+            android:layout_toEndOf="@+id/item_near_object_img"
+            android:text="@string/item_near_object_reference"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_near_object_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_near_object_name_label"
+            android:layout_toEndOf="@+id/item_near_object_reference_label"
+            tools:text="Object Name" />
+
+        <ImageView
+            android:id="@+id/item_near_object_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/item_near_object_reference"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorSeparator"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_near_object_one"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/item_near_object_estimated_diameter"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_kilometers"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_kilometers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00km" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_meters"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_meters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00m" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_miles"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_miles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00m" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_feet"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_feet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/item_near_object_velocity"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_kilometers_second"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_km_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_kilometers_hour"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_km_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_miles_hour"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_miles_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="0.00f" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSeparator"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:paddingEnd="5dp"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/item_near_object_information"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_potentially_hazardous"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_potencially_hazardous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_close_approach_date"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_approach_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/item_near_object_miss_distance"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_astronomical"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_astronomical_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_lunar"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_lunar_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_kilometers"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_kilometers_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_near_object_miles"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_near_object_miles_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="value" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
